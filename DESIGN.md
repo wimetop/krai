@@ -13,7 +13,7 @@ A field atlas left open on a mountain: monumental condensed type, cinematic mist
 Canonical runtime tokens live in `src/app/globals.css` under `:root`; this document records their intent.
 
 - Paper `#e9e7dc`; ink `#242a23`; moss `#555b40`; forest `#202920`; ember `#a9422c`; pale ink `#aaa99a`.
-- Display: locally hosted Oswald Variable, 500–600; secondary editorial: Cormorant Garamond, 400 italic/500; body: Manrope Variable, 400–600; utility: system monospace.
+- Display: locally hosted Space Grotesk Variable, 500–600; secondary editorial: EB Garamond Variable, 400 italic/500; body: Plus Jakarta Sans Variable, 400–600; utility: Space Grotesk Variable in compact uppercase with generous tracking. No monospace role.
 - Page gutter: clamp(22px, 4.2vw, 76px). Body 14–17px. Utility 10–12px. Editorial titles 64–160px. Hero 31vw with mobile-specific sizing.
 - No general card primitive, rounded panel system, gradients as decoration, or stock dashboard grids.
 

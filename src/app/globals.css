@@ -56,7 +56,10 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 button {
-  font: inherit;
+  font-family: var(--body);
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
   color: inherit;
   background: none;
   border: 0;
@@ -1083,10 +1086,9 @@ main {
 }
 .recording {
   display: grid;
-  grid-template-columns: 40px 62px minmax(225px, 1fr) minmax(
-      120px,
-      0.8fr
-    ) 55px 20px;
+  grid-template-columns:
+    40px 62px minmax(225px, 1fr) minmax(120px, 0.8fr)
+    55px 20px;
   width: 100%;
   align-items: center;
   gap: 15px;
@@ -1790,10 +1792,9 @@ main {
     font-size: 20px;
   }
   .recording {
-    grid-template-columns: 25px 50px minmax(210px, 1fr) minmax(
-        100px,
-        0.8fr
-      ) 45px;
+    grid-template-columns:
+      25px 50px minmax(210px, 1fr) minmax(100px, 0.8fr)
+      45px;
     gap: 10px;
   }
   .recording-arrow {
@@ -2830,4 +2831,21 @@ main {
   --display: "Space Grotesk Variable", "Trebuchet MS", sans-serif;
   --body: "Plus Jakarta Sans Variable", Arial, sans-serif;
   --serif: "EB Garamond Variable", Georgia, serif;
+  --utility: "Space Grotesk Variable", "Trebuchet MS", sans-serif;
+}
+
+/* Metadata is part of the same editorial voice; avoid typewriter defaults. */
+body .mono,
+body .eyebrow,
+body .section-label,
+body .language,
+body .nav-index,
+body .hero-field,
+body .hero-footer,
+body .map-filters button,
+body .archive-filters button,
+body .dialog-close {
+  font-family: var(--utility) !important;
+  font-weight: 600;
+  letter-spacing: 0.08em;
 }
